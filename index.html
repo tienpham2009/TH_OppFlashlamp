@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+
+</head>
+<body>
+<script src="Flashlamp.js"></script>
+<script>
+    let lamp = new Flashlamp()
+    let battery = new Battery();
+    battery.setEnergy(30);
+    lamp.setBattery(battery);
+    lamp.turnOn();
+    lamp.light();
+    battery.chargeEnergy();
+    console.log(lamp.getBatteryInfo());
+
+</script>
+</body>
+</html>
